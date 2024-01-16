@@ -9,7 +9,7 @@ function Pokedex({ pokemon }) {
   return (
     <div>
       {pokemon.map(({id, name, type, base_experience}) => 
-        <Pokecard id={id}
+        <Pokecard id={id} //TODO: id can also be own line
           name={name}
           type={type}
           base_experience={base_experience} />
