@@ -1,7 +1,9 @@
 import './App.css';
 import Pokedex from './Pokedex';
 
+/** App: renders a single Pokedex component. */
 function App() {
+  
   return (
     <div>
       <Pokedex pokemon={

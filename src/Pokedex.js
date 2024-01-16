@@ -1,5 +1,9 @@
 import Pokecard from "./Pokecard";
 
+/** Pokedex: Renders a sequence of Pokecard components from an array of pokemon.
+ * Accepts, via props, an array of pokemon objects.
+ *    [{id, name, type, base_experience}, ...]
+*/
 function Pokedex({ pokemon }) {
 
   return (
@@ -12,7 +16,6 @@ function Pokedex({ pokemon }) {
       )}
     </div>
   );
-
 }
 
 export default Pokedex;
