@@ -1,0 +1,14 @@
+
+
+
+.Pokecard {
+  background-color: #999;
+  border-radius: 15%;
+  width: 29rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: center;
+}
+
+

@@ -1,3 +1,5 @@
+import './Pokecard.css' ;
+
 const BASE_POKE_IMG_URL = (
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/")
 
@@ -5,11 +7,11 @@ const BASE_POKE_IMG_URL = (
  * Accepts, via props, a pokemon object: {id, name, type, base_experience}
 */
 function Pokecard({id, name, type, base_experience}) {
-  
+
   return (
-    <div>
+    <div className="Pokecard">
       <h2>{name}</h2>
-        <img src={ BASE_POKE_IMG_URL + id + '.png' } alt={name} /> {/*TODO: interpolate */}
+        <img src={ `${BASE_POKE_IMG_URL}${id}.png` } alt={name} />
       <div>
         <span>Type: {type}</span><br/>
         <span>EXP: {base_experience}</span>

@@ -1,4 +1,5 @@
 import Pokecard from "./Pokecard";
+import './Pokedex.css'
 
 /** Pokedex: Renders a sequence of Pokecard components from an array of pokemon.
  * Accepts, via props, an array of pokemon objects.
@@ -7,8 +8,8 @@ import Pokecard from "./Pokecard";
 function Pokedex({ pokemon }) {
 
   return (
-    <div>
-      {pokemon.map(({id, name, type, base_experience}) => 
+    <div className = "Pokedex">
+      {pokemon.map(({id, name, type, base_experience}) =>
         <Pokecard id={id} //TODO: id can also be own line
           name={name}
           type={type}
