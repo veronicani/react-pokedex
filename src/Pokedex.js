@@ -1,15 +1,18 @@
+import Pokecard from "./Pokecard";
 
-function Pokedex({ Pokemon }) {
+function Pokedex({ pokemon }) {
 
   return (
     <div>
-      {Pokemon.map(p => <div>
-        <Pokecard id={p.id}
-          name={p.name}
-          type={p.type}
-          base_experience={p.base_experience} />
-      </div>)}
+      {pokemon.map(({id, name, type, base_experience}) => 
+        <Pokecard id={id}
+          name={name}
+          type={type}
+          base_experience={base_experience} />
+      )}
     </div>
   );
 
 }
+
+export default Pokedex;
